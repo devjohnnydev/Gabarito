@@ -1,0 +1,12 @@
+body { font-family: system-ui, sans-serif; background: #f3f5f2; color: #172126; margin: 0; }
+main { max-width: 720px; margin: 0 auto; padding: 24px 16px; display: flex; flex-direction: column; gap: 16px; }
+form { display: flex; flex-wrap: wrap; gap: 10px; align-items: end; }
+label { display: flex; flex-direction: column; font-size: .9rem; gap: 4px; }
+input { padding: 8px; border: 1px solid #c9d2ce; border-radius: 6px; }
+button { padding: 8px 14px; border: 0; border-radius: 6px; background: #c98104; color: #1b1305; font-weight: 600; cursor: pointer; }
+#lista-aparelhos { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+#lista-aparelhos li { display: flex; justify-content: space-between; background: #fff; padding: 8px 12px; border-radius: 6px; }
+.erro { color: #ae3529; font-weight: 600; }
+.destaque { background: #fbefd6; padding: 12px; border-radius: 8px; }
+table { border-collapse: collapse; width: 100%; background: #fff; }
+th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid #c9d2ce; }

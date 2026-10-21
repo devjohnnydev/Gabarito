@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medidor Coopera</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Medidor Coopera</h1>
+
+    <form id="form-aparelho">
+      <label>Aparelho <input id="nome" required placeholder="Geladeira"></label>
+      <label>Potência (W) <input id="potencia" type="number" min="1" max="10000" required></label>
+      <label>Horas por dia <input id="horas" type="number" min="0" max="24" step="0.1" required></label>
+      <label>Dias no mês <input id="dias" type="number" min="1" max="31" value="30" required></label>
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <ul id="lista-aparelhos"></ul>
+
+    <button id="btn-simular" type="button">Simular</button>
+    <p id="erro" class="erro" hidden></p>
+
+    <section id="resultado"></section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
